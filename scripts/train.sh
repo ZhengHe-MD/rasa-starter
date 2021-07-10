@@ -1,4 +1,4 @@
-RASA_VERSION=$(./lookup_env.sh RASA_VERSION)
+RASA_VERSION=$(./scripts/lookup_env.sh RASA_VERSION)
 
 docker run --rm \
            --user "$(id -u):$(id -g)" \

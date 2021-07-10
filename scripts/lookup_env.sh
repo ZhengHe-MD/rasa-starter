@@ -1,1 +1,1 @@
-grep $1 ../.env | cut -d'=' -f2
+grep $1 .env | cut -d'=' -f2
