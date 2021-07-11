@@ -4,4 +4,4 @@ docker run --rm \
            --user "$(id -u):$(id -g)" \
            -v $(pwd):/app \
            --name action-server \
-           rasa/rasa:$RASA_VERSION-full run actions -vv --endpoints=endpoints-local.yml --credentials=credentials-local.yml
+           rasa/rasa:$RASA_VERSION-full run actions --endpoints=endpoints-local.yml --credentials=credentials-local.yml $@
